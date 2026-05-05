@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Featured Workout"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/videoCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/videoThumbnail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/train" />
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="@color/white" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/videoTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Full Body Workout for Beginners"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Plan"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDailyPlan"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Daily Plan"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/white"
+            app:iconTint="@color/white"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/ic_plan" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnWeeklyPlan"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Weekly Plan"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:textColor="@color/primary"
+            app:iconTint="@color/primary"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/ic_plan" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMonthlyPlan"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Monthly Plan"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:textColor="@color/secondary"
+            app:iconTint="@color/secondary"
+            app:strokeColor="@color/secondary"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/ic_plan" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnQuarterlyPlan"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Quarterly Plan"
+            android:layout_marginBottom="24dp"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:backgroundTint="@color/accent_blue"
+            android:textColor="@color/white"
+            app:iconTint="@color/white"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/ic_plan" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
